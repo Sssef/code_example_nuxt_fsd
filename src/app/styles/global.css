@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "./variables.css";
+@import "./transitions.css";
+
+/* Явно добавляем источники классов вне srcDir (src/app). */
+@source "../../../src/widgets";
+@source "../../../src/pages";
+@source "../../../src/shared";
+@source "../../../src/features";
+@source "../../../common";
+
+/* Базовые стили (не дублируются с app.vue) */
+html {
+  color-scheme: dark;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  display: block;
+}
+
+/* Скрываем кнопку показать пароль в Edge */
+::-ms-reveal {
+  display: none;
+}

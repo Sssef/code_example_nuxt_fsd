@@ -1,0 +1,27 @@
+/* CSS переменные для консистентности и темизации */
+
+:root {
+  /* Длительности переходов */
+  --transition-fast: 0.15s;
+  --transition-normal: 0.2s;
+  --transition-slow: 0.4s;
+
+  /* Цветовая схема - унифицированные slate цвета */
+  --color-bg-primary: rgb(17 24 39); /* gray-900 */
+  --color-bg-secondary: rgb(31 41 55); /* gray-800 */
+  --color-text-primary: rgb(243 244 246); /* gray-100 */
+  --color-text-secondary: rgb(156 163 175); /* gray-400 */
+  --color-text-muted: rgb(107 114 128); /* gray-500 */
+  --color-text-accent: rgb(59 130 246); /* blue-500 */
+
+  /* UI переменные */
+  --ui-radius: 0.25rem;
+  --ui-container: 90rem;
+
+  /* Шкала отступов */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
