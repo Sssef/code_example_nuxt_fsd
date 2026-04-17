@@ -21,7 +21,6 @@ export const useMyTicketsPageData = () => {
     return (pageData.value?.bookings?.length ?? 0) === 0;
   });
 
-  // Локальный реактивный массив билетов
   const bookings = ref<Ticket[]>(pageData.value?.bookings ?? []);
 
   watch(
@@ -41,7 +40,6 @@ export const useMyTicketsPageData = () => {
     }
   };
 
-  // Запрос свежего билета и обновление
   const refreshBooking = async (id: string) => {
     try {
       const fresh = await getMyTicketById(id);
